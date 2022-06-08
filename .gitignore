@@ -1,0 +1,12 @@
+
+Pong Project/Library/*
+Pong Project/Logs/*
+Pong Project/Temp/*
+Pong Project/.vs/*
+Pong Project/obj/*
+
+Pong Project/.vsconfig
+Pong Project/*.sln
+Pong Project/*.csproj
+
+
