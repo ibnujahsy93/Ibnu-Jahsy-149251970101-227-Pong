@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1376479674}
-  isRight: 0
+  isRight: 1
   manager: {fileID: 948724291}
 --- !u!1 &295612110
 GameObject:
@@ -926,7 +926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1376479674}
-  isRight: 1
+  isRight: 0
   manager: {fileID: 948724291}
 --- !u!1 &1207675205
 GameObject:

@@ -32,10 +32,12 @@ public class BallController : MonoBehaviour
 
     private Vector2 RandomSpeedBall()
     {
-        float minValue = Random.Range(-3f, -9f);
-        float maxValue = Random.Range(3f, 9f);
+        float minValueX = Random.Range(-5f, -9f);
+        float maxValueX = Random.Range(5f, 9f);
+        float minValueY = Random.Range(-1f, -5f);
+        float maxValueY = Random.Range(1f, 5f);
 
-        Vector2 randomVector = new Vector2(Random.Range(minValue, maxValue), Random.Range(minValue, maxValue));
+        Vector2 randomVector = new Vector2(Random.Range(minValueX, maxValueX), Random.Range(minValueY, maxValueY));
         return randomVector;
     }
 }
