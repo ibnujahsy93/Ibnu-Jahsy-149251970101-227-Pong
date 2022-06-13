@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-    public Vector2 speed;
+    
     public Vector2 resetPosition;
     
     private Rigidbody2D ballRb;
@@ -58,5 +58,10 @@ public class BallController : MonoBehaviour
 
         Vector2 randomVector = new Vector2(vectorValueX, vectorValueY);
         return randomVector;
+    }
+
+    public void ActivateSpeedPower(float magnitude)
+    {
+        ballRb.velocity *= magnitude;
     }
 }
