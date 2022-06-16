@@ -6,10 +6,12 @@ public class BallController : MonoBehaviour
 {
     
     public Vector2 resetPosition;
-    
+    public Collider2D rightPaddle;
+    public Collider2D leftPaddle;
     private Rigidbody2D ballRb;
+    public bool lasthitByBall;
 
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -39,20 +41,20 @@ public class BallController : MonoBehaviour
         float valueX = Random.Range(-9f, 9f);
         if(valueX >= 0)
         {
-            vectorValueX = Random.Range(5f, 9f);
+            vectorValueX = Random.Range(3f, 4f);
         }
         else
         {
-            vectorValueX = Random.Range(-3f, -5f);
+            vectorValueX = Random.Range(-3f, -4f);
         }
         float valueY = Random.Range(-9f, 9f);
         if (valueY >= 0)
         {
-            vectorValueY = Random.Range(5f, 9f);
+            vectorValueY = Random.Range(3f, 4f);
         }
         else
         {
-            vectorValueY = Random.Range(-3f, -5f);
+            vectorValueY = Random.Range(-3f, -4f);
         }
 
 
@@ -64,4 +66,18 @@ public class BallController : MonoBehaviour
     {
         ballRb.velocity *= magnitude;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "RPaddle")
+        {
+            lasthitByBall = true;
+        }
+        else if (collision.gameObject.tag == "LPaddle")
+        {
+            lasthitByBall = false;
+        }
+    }
+
+
 }

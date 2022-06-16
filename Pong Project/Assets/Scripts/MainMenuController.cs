@@ -18,5 +18,17 @@ public class MainMenuController : MonoBehaviour
         Application.Quit();
         
     }
+    public void CreditScene()
+    {
+        Debug.Log("Credit Scene");
+        SceneManager.LoadScene(2);
+
+    }
+    public void MainMenu()
+    {
+        Debug.Log("Main Menu");
+        SceneManager.LoadScene(0);
+
+    }
 
 }
