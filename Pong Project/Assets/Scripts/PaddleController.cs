@@ -86,16 +86,12 @@ public class PaddleController : MonoBehaviour
         speed = 5;
     }
 
-    public void DoubleScaleR()
+    public void DoubleScale()
     {
         transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y*2);
         timer2 = 5;
     }
-    public void DoubleScaleL()
-    {
-        transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y * 2);
-        timer2 = 5;
-    }
+    
     public void NormalScale()
     {
         transform.localScale = new Vector2(0.4675952f, 1.2f);

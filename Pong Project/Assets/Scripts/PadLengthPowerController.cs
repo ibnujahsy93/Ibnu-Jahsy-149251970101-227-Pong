@@ -17,13 +17,13 @@ public class PadLengthPowerController : MonoBehaviour
         {
             if (baller.lasthitByBall == true)
             {
-                rightPad.GetComponent<PaddleController>().DoubleScaleR();
+                rightPad.GetComponent<PaddleController>().DoubleScale();
                 manager.RemovePowerUp(gameObject);
                 
             }
             else if (baller.lasthitByBall == false)
             {
-                leftPad.GetComponent<PaddleController>().DoubleScaleL();
+                leftPad.GetComponent<PaddleController>().DoubleScale();
                 manager.RemovePowerUp(gameObject);
                 
             }
