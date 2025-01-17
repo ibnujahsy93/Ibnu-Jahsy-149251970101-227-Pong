@@ -96,6 +96,11 @@ public class PaddleController : MonoBehaviour
     {
         transform.localScale = new Vector2(0.4675952f, 1.2f);
     }
+    public void ShrinkScale()
+    {
+        transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y * 0.5);
+        timer2 = 5;
+    }
    
 
 
